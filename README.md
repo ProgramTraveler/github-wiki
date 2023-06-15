@@ -1,3 +1,3 @@
 # welcome to my wiki
 
-<img src="dog.jpg" alt="dog" style="zoom: 100%">
+<img src="dog.jpg" alt="dog" style="zoom: 50%">
