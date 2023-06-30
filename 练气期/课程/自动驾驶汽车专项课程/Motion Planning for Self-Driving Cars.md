@@ -1,9 +1,3 @@
-# Introduction to Self-Driving Cars
-
-## 第四周
-
----
-
 # Motion Planning for Self-Driving Cars
 
 ## 第一周
@@ -58,3 +52,12 @@
 ### 笔记
 
 <img src="Motion Planning for Self-Driving Cars\6_week\motion planning.png" alt="img" style="zoom: 100%">
+
+## 第七周
+
+* 参数化曲线广泛用于定义自动驾驶环境中的路径
+* 将连续曲线路径优化引入为两点边界值问题 在满足曲率约束的同时最小化与期望路径的偏差
+
+### 笔记
+
+<img src="Motion Planning for Self-Driving Cars\7_week\motion planning.png" alt="img" style="zoom: 100%">
