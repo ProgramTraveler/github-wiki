@@ -1,0 +1,53 @@
+\documentclass[article]{article}
+\usepackage[fontset=ubuntu]{ctex} % 中文显示包
+% 超链接
+\usepackage{hyperref}
+\hypersetup{hidelinks,
+colorlinks = true,
+allcolors = blue,
+pdfstartview = Fit,
+breaklinks = true
+}
+
+\usepackage{amsmath}
+% title
+\begin{document}
+\title{Path to Mathematics}
+\maketitle
+
+\section{符号}
+记录自己在阅读数学相关知识时，遇到的不懂的数学符号和它们对应的含义，如果你在阅读的过程中发现存在问题，那么你可以给我留言让我可以弥补错误，thanks bro。
+\subsection{\texorpdfstring{$R$}{}}
+该符号表示为实数。
+
+\subsection{\texorpdfstring{$R^n$}{}}
+实 $n$-维向量，也就是 $n*1$ 的矩阵。
+
+在我阅读凸优化的相关知识时，我发现有个 $f: R^n \to R$，经过一些查询 \href{https://math.stackexchange.com/questions/1852420/what-does-mathbbrn-to-mathbbrm-mean-and-what-is-mathbbrn}{传送门1.2.1}、\href{https://math.ryerson.ca/~danziger/professor/MTH141/Handouts/vectors.pdf}{传送门1.2.2}，该表达式其实也可以视为 $f(R^n) = R$，其中 $f$ 可以看为一个 $1 * n$ 的矩阵 $A$
+
+\subsection{\texorpdfstring{$\text{\textbardbl} Ax -b \text{\textbardbl}_2^2$}{}}
+这是在最小二乘中出现的一个表达式，下标 $2$ 表示的是 2 范式，而上标 $2$ 表示的平方。\href{https://math.stackexchange.com/questions/3045899/if-a-has-orthonormal-columns-then-ax2-2-x2-2-why}{传送门1.3.1}
+
+其中，最小二乘的表达式也在这里给出 $$\text{\textbardbl} Ax -b \text{\textbardbl}_2^2 = \displaystyle\sum_{i = 1}^k(a^T_i - bi)^2$$.
+
+\subsection{向量}
+如果$a,b,c \in R$，对于 $R^3$ 中的某个向量有 $$(a,b,c) = \begin{bmatrix} a\\ b\\ c \end{bmatrix} = \begin{bmatrix}
+    a && b && c
+\end{bmatrix}^T$$
+
+\section{名词}
+这个位置是一些数学名词的解释。是来自 wiki 的，放在这里仅仅只是为了省去在浏览器打字的时间。
+\subsection{凸优化}
+\href{https://zh.wikipedia.org/wiki/%E5%87%B8%E5%84%AA%E5%8C%96}{wiki 凸优化} 
+\begin{quotation} % 引用
+    优化问题的分水岭不是线性和非线性，而是凸性和非凸性
+\end{quotation}
+    
+\subsection{最小二乘}
+\href{https://zh.wikipedia.org/wiki/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95}{wiki 最小二乘}
+
+判断一个优化问题是否为最小二乘问题非常简单，只需要检验目标函数是否为二次函数，然后检验此二次函数是否半正定。TODO: 什么是半正定？
+
+\subsection{线性规划}
+其目标函数和所有的约束函数均为线性函数。
+\end{document}
